@@ -176,7 +176,7 @@ class MapNodeGeometry extends BufferGeometry {
 
 class CanvasUtils {
     static createOffscreenCanvas(width, height) {
-        if (OffscreenCanvas) {
+        if (window.OffscreenCanvas) {
             return new OffscreenCanvas(width, height);
         }
         else {
