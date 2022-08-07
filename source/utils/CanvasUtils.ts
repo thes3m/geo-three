@@ -13,7 +13,7 @@ export class CanvasUtils
      */
 	public static createOffscreenCanvas(width: number, height: number): (HTMLCanvasElement | OffscreenCanvas) 
 	{
-		if (OffscreenCanvas) 
+		if (window.OffscreenCanvas) 
 		{
 			return new OffscreenCanvas(width, height);
 		}
